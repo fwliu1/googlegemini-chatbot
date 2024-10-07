@@ -38,7 +38,24 @@ st.title("Tempe Envision Center Assistant")
 
 # Sidebar for context input (for demo purposes, normally this would be pre-set)
 #st.sidebar.title("Set Envision Center Information")
-context_input = st.sidebar.text_area(
+context_input = """
+    Tempe Envision Center Information:
+    - Location: 1600 E Apache Blvd, Tempe, AZ 85281
+    - Hours: Monday-Friday 8:30am-5pm, Saturday Closed, Closed on Sundays
+    - Contact: (480) 350-5400
+    - Facilities: Computer Lab, Meeting Rooms, Classrooms, Workforce Development Center
+    - Programs:
+      * Adult Education: GED Classes, English Language Learning
+      * Workforce Development: Job Search Assistance, Resume Writing Workshops
+      * Youth Programs: After-school Tutoring, STEM Workshops
+      * Community Services: Housing Assistance, Financial Literacy Classes
+    - Services: 
+      * Free Wi-Fi
+      * Computer Access
+      * Printing and Copying (fees may apply)
+    """
+'''
+st.sidebar.text_area(
     "Enter information about the Envision center:",
     value="""
     Tempe Envision Center Information:
@@ -58,6 +75,7 @@ context_input = st.sidebar.text_area(
     """,
     height=300
 )
+'''
 #if st.sidebar.button("Update Center Information"):
 st.session_state.context = context_input
 #    st.sidebar.success("Envision Center information updated!")
