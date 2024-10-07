@@ -13,8 +13,7 @@ def get_gemini_response(model, question):
 st.title("Gemini AI Q&A App")
 
 # API key input
-api_key = st.secrets["APIKEY"]
-#text_input("Enter your Gemini API Key:", type="password")
+api_key = st.text_input("Enter your Gemini API Key:", type="password")
 
 if api_key:
     # Initialize the model
