@@ -53,6 +53,23 @@ context_input = """
       * Free Wi-Fi
       * Computer Access
       * Printing and Copying (fees may apply)
+      The Tempe EnVision Center at 1310 E. Apache Blvd. is the city's unique resource and resilience hub that aims to provide a one-stop shop for:
+      *Employment
+      *Education
+      *Technology access and support
+      *Local food programs
+      *Emergency preparedness
+      *Health and wellness
+      *And more!
+       
+The center is designed to encourage connection and collaboration in an open, modern space. The center features:
+
+Several meeting spaces for community members, neighborhood groups and local organizations
+Booths for one-on-one sessions and collaboration
+Colorful, comfortable seating throughout
+A café space for snacks
+The center is a partnership among Tempe's Community Health and Human Services Department, Sustainability and Resilience Divison and Emergency Management. 
+
     """
 
 #if st.sidebar.button("Update Center Information"):
@@ -118,9 +135,12 @@ else:
 # Instructions
 st.sidebar.title("How to Use")
 st.sidebar.markdown("""
-1. Enter the Gemini API Key.
-2. Select your user type (Kid, Adult, or Senior).
-3. Ask questions about Tempe Envision Center in the chat interface.
-4. The AI will provide information based on your user type and the center's details.
-5. For real deployment, remove the 'Set Envision Center Information' section and pre-set the context.
+1. Select your user type (Kid, Adult, or Senior).
+2. Ask questions about Tempe Envision Center in the chat interface.
+3. The AI will provide information based on your user type and the center's details.
+
+Quick Links:
+* Envision Center Website: https://www.tempe.gov/government/community-health-and-human-services/envision-center
+* Homeless Outreach: https://www.tempe.gov/government/community-health-and-human-services/housing-services/ending-homelessness/homeless-outreach
+
 """)
